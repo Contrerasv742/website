@@ -3,67 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Projects</title>
-    <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/profile.css">
+    <title>Information and Github Projects</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/sliding_cards.js"></script>
+</head>
 </head>
 <body>
-    <header>
-        <div class="ascii-container">
-            <pre class="ascii-art">
-                _____           _    __      _ _       
-                |  __ \         | |  / _|    | (_)      
-                | |__) |__  _ __| |_| |_ ___ | |_  ___  
-                |  ___/ _ \| '__| __|  _/ _ \| | |/ _ \ 
-                | |  | (_) | |  | |_| || (_) | | | (_) |
-                |_|   \___/|_|   \__|_| \___/|_|_|\___/ 
-            </pre>
-        </div>
-            <p class="subtitle"><b>Author:</b> Victor Perez Contreras</p>
-    </header>
-    <section class="profile-section">
+    <header class="header">
         <div class="container">
-            <div class="profile-container">
-                <div class="profile-image">
-                    <div class="image-placeholder">
-                        <span>Your Photo Here</span>
-                    </div>
-                </div>
-                <div class="profile-info">
-                    <h2 class="profile-name">Victor Perez Contreras</h2>
-                    <p class="profile-title">Software Developer</p>
-                    <div class="profile-description">
-                        <p>I am a passionate computer engineering major at UC Santa Cruz. I am concetrating in Computer Network with an interst in create memory-safe C and C++ code. I intend on graduating in December 2025.</p>
-                    </div>
-                    <div class="profile-details">
-                        <div class="profile-section-title">Languages & Technologies</div>
-                        <div class="languages-container">
-                            <span class="language-tag">C</span>
-                            <span class="language-tag">C++</span>
-                            <span class="language-tag">Python</span>
-                            <span class="language-tag">Verilog</span>
-                            <span class="language-tag">Rust</span>
-                        </div>
-
-                        <div class="profile-section-title">Quick Facts</div>
-                        <ul class="quick-facts">
-                            <li><span class="fact-icon">📍</span> Location: Santa Clara, California</li>
-                            <li><span class="fact-icon">🎓</span> Education: University of California, Santa Cruz</li>
-                            <li><span class="fact-icon">💼</span> Major: Computer Engineering (Computer Networks)</li>
-                            <li><span class="fact-icon">🌟</span> Interests: Network Security, Vim, Guitar, Cooking</li>
-                        </ul>
-
-                        <div class="social-links">
-                            <a href="https://github.com/Contrerasv742/" class="social-link"><span class="social-icon">GitHub</span></a>
-                            <a href="https://linkedin.com/in/victor-perez-contreras" class="social-link"><span class="social-icon">LinkedIn</span></a>
-                        </div>
-                    </div>
+            <div class="header-content">
+                <div class="nav-buttons">
+                    <a href="index.html" class="nav-button">Home</a>
+                    <a href="projects.html" class="nav-button active">Projects</a>
+                    <a href="education.html" class="nav-button">Education</a>
+                    <a href="interests.html" class="nav-button">Interests</a>
                 </div>
             </div>
         </div>
-    </section>
+    </header>
     
+    <div class="container">
+        <div class="ascii-container">
+        <pre class="ascii-art">
+          _____                   _____                  _______                  _____                    _____                    _____            _____                    _____          
+         /\    \                 /\    \                /::\    \                /\    \                  /\    \                  /\    \          /\    \                  /\    \         
+        /::\    \               /::\    \              /::::\    \              /::\    \                /::\    \                /::\    \        /::\    \                /::\    \        
+       /::::\    \             /::::\    \            /::::::\    \             \:::\    \              /::::\    \              /::::\    \       \:::\    \              /::::\    \       
+      /::::::\    \           /::::::\    \          /::::::::\    \             \:::\    \            /::::::\    \            /::::::\    \       \:::\    \            /::::::\    \      
+     /:::/\:::\    \         /:::/\:::\    \        /:::/~~\:::\    \             \:::\    \          /:::/\:::\    \          /:::/\:::\    \       \:::\    \          /:::/\:::\    \     
+    /:::/__\:::\    \       /:::/__\:::\    \      /:::/    \:::\    \             \:::\    \        /:::/__\:::\    \        /:::/  \:::\    \       \:::\    \        /:::/__\:::\    \    
+   /::::\   \:::\    \     /::::\   \:::\    \    /:::/    / \:::\    \            /::::\    \      /::::\   \:::\    \      /:::/    \:::\    \      /::::\    \       \:::\   \:::\    \   
+  /::::::\   \:::\    \   /::::::\   \:::\    \  /:::/____/   \:::\____\  _____   /::::::\    \    /::::::\   \:::\    \    /:::/    / \:::\    \    /::::::\    \    ___\:::\   \:::\    \  
+ /:::/\:::\   \:::\____\ /:::/\:::\   \:::\____\|:::|    |     |:::|    |/\    \ /:::/\:::\    \  /:::/\:::\   \:::\    \  /:::/    /   \:::\    \  /:::/\:::\    \  /\   \:::\   \:::\    \ 
+/:::/  \:::\   \:::|    /:::/  \:::\   \:::|    |:::|____|     |:::|    /::\    /:::/  \:::\____\/:::/__\:::\   \:::\____\/:::/____/     \:::\____\/:::/  \:::\____\/::\   \:::\   \:::\____\
+\::/    \:::\  /:::|____\::/   |::::\  /:::|____|\:::\    \   /:::/    /\:::\  /:::/    \::/    /\:::\   \:::\   \::/    /\:::\    \      \::/    /:::/    \::/    /\:::\   \:::\   \::/    /
+ \/_____/\:::\/:::/    / \/____|:::::\/:::/    /  \:::\    \ /:::/    /  \:::\/:::/    / \/____/  \:::\   \:::\   \/____/  \:::\    \      \/____/:::/    / \/____/  \:::\   \:::\   \/____/ 
+          \::::::/    /        |:::::::::/    /    \:::\    /:::/    /    \::::::/    /            \:::\   \:::\    \       \:::\    \          /:::/    /            \:::\   \:::\    \     
+           \::::/    /         |::|\::::/    /      \:::\__/:::/    /      \::::/    /              \:::\   \:::\____\       \:::\    \        /:::/    /              \:::\   \:::\____\    
+            \::/____/          |::| \::/____/        \::::::::/    /        \::/    /                \:::\   \::/    /        \:::\    \       \::/    /                \:::\  /:::/    /    
+             ~~                |::|  ~|               \::::::/    /          \/____/                  \:::\   \/____/          \:::\    \       \/____/                  \:::\/:::/    /     
+                               |::|   |                \::::/    /                                     \:::\    \               \:::\    \                                \::::::/    /      
+                               \::|   |                 \::/____/                                       \:::\____\               \:::\____\                                \::::/    /       
+                                \:|   |                  ~~                                              \::/    /                \::/    /                                 \::/    /        
+                                 \|___|                                                                   \/____/                  \/____/                                   \/____/         
+        </pre>
+        </div>
+    </div>
     <section class="projects container">
         <!-- Project 1 -->
         <div class="project-card from-left">
@@ -186,32 +173,5 @@
             <p>© 2025 My GitHub Portfolio. All rights reserved.</p>
         </div>
     </footer>
-    
-    <script>
-        // Function to check if an element is in the viewport
-        function isInViewport(element) {
-            const rect = element.getBoundingClientRect();
-            return (
-                rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.85
-            );
-        }
-        
-        // Function to handle scroll animation
-        function handleScroll() {
-            const projectCards = document.querySelectorAll('.project-card');
-            
-            projectCards.forEach(card => {
-                if (isInViewport(card) && !card.classList.contains('visible')) {
-                    card.classList.add('visible');
-                }
-            });
-        }
-        
-        // Add scroll event listener
-        window.addEventListener('scroll', handleScroll);
-        
-        // Trigger on page load to check initial visible elements
-        window.addEventListener('load', handleScroll);
-    </script>
 </body>
 </html>
